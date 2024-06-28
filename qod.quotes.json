@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "667845cdb9cb890eef867133"
+  },
+  "author": "Mahatma Gandhi",
+  "descr": "You must be the change you wish to see in the world.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667c41cbb924b4c26313184e"
+  },
+  "author": "Emily Dickinson",
+  "descr": "That it will never come again is what makes life so sweet.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667c41f0b924b4c26313184f"
+  },
+  "author": "George Eliot",
+  "descr": "It is never too late to be what you might have been.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667c420bb924b4c263131850"
+  },
+  "author": "Ralph Waldo Emerson",
+  "descr": "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667cb6fbb924b4c263131851"
+  },
+  "author": "Ernest Hemingway",
+  "descr": "We are all broken, that's how the light gets in",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667cb715b924b4c263131852"
+  },
+  "author": "Voltaire",
+  "descr": "Appreciation is a wonderful thing. It makes what is excellent in others belong to us as well.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667cb735b924b4c263131853"
+  },
+  "author": "Brene Brown",
+  "descr": "Self-awareness and self-love matter. Who we are is how we lead.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667d31a63f4b2a79bb046dc8"
+  },
+  "author": "Stephen King",
+  "descr": "Self-awareness and self-love matter. Who we are is how we lead.I try to create sympathy for my characters, then turn the monsters loose.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667d31c03f4b2a79bb046dc9"
+  },
+  "author": "Ernest Hemingway",
+  "descr": "Prose is architecture, not interior decoration.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667d31d83f4b2a79bb046dca"
+  },
+  "author": "Mark Twain",
+  "descr": "Most writers regard the truth as their most valuable possession, and therefore are most economical in its use.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667d31f93f4b2a79bb046dcb"
+  },
+  "author": "William Shakespeare",
+  "descr": "And as imagination bodies forth The forms of things unknown, the poet's pen Turns them to shapes and gives to airy nothing A local habitation and a name.",
+  "tag": "Trending",
+  "title": "title"
+},
+{
+  "_id": {
+    "$oid": "667d320e3f4b2a79bb046dcc"
+  },
+  "author": "Somerset Maugham",
+  "descr": "If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn't matter a damn how you write.",
+  "tag": "Trending",
+  "title": "title"
+}]
