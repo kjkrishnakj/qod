@@ -8,13 +8,8 @@ const connectDb = handler => async (req, res) => {
     }
 
     try {
-        await mongoose.connect(atlasUri, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log("MongoDB connected");
+        await mongoose.connect(atlasUri);
     } catch (error) {
-        console.error("MongoDB connection error:", error);
         return res.status(500).json({ message: "Database connection failed" });
     }
 
