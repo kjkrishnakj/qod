@@ -33,7 +33,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         const data = { name: name, email, password }
-        let res = await fetch(`http://localhost:3000/api/signup`, {
+        let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ const Signup = () => {
         <div>
             <ToastContainer />
             <Head><title>QOD | Signup</title></Head>
-            <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
+            <div className="flex min-h-screen bg-gray-900 flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="mt-4  sm:mx-auto sm:w-full sm:max-w-sm">
           <Image src={logo} alt="" className='mx-auto ' style={{ height: "4rem", width: "4rem" }}></Image>
 

@@ -29,7 +29,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const data = { email, password }
-    let res = await fetch(`http://localhost:3000/api/login`, {
+    let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ const Login = () => {
       toast.success("Logged in successfully 👍", { autoClose: 1000 })
       setTimeout(() => {
 
-        router.push("http://localhost:3000")
+        router.push(process.env.NEXT_PUBLIC_HOST)
       }, 1000)
     }
     else {
@@ -61,7 +61,7 @@ const Login = () => {
     <div>
       <ToastContainer />
       <Head><title>QOD | Login</title></Head>
-      <div className="flex min-h-screen flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="flex min-h-screen flex-col bg-gray-900 justify-center px-6 py-12 lg:px-8">
         <div className="mt-4  sm:mx-auto sm:w-full sm:max-w-sm">
         <Image src={logo} alt="" className='mx-auto ' style={{ height: "4rem", width: "4rem" }}></Image>
 

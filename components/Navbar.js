@@ -18,7 +18,7 @@ function Navbar({ user, logout }) {
   const handleSearchSubmit = async (e) => {
     e.preventDefault();
     const data = { searchText }
-    let res = await fetch(`http://localhost:3000/api/getauthor`, {
+    let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/getauthor`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ function Navbar({ user, logout }) {
 
     <div>
       <ToastContainer />
-      <header className="text-gray-600 body-font">
+      <header className="text-gray-600 bg-gray-900 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <Link href='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image src={logo} alt="" style={{ height: "4rem", width: "4rem" }}></Image>
@@ -67,12 +67,12 @@ function Navbar({ user, logout }) {
           <div className="relative mr-3 hidden md:block">
             <form onSubmit={handleSearchSubmit} className="flex items-center">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                   <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                 </svg>
                 <span className="sr-only">Search icon</span>
               </div>
-              <input value={searchText} onChange={handleSearchChange} type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-gray-200 border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-500 focus:border-green-600 dark:bg-green-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-600 dark:focus:border-green-600" placeholder="Author" />
+              <input value={searchText} onChange={handleSearchChange} type="text" id="search-navbar" className="block w-full p-2 ps-10 text-sm text-white border border-gray-300 rounded-lg bg-gray-50 focus:ring-green-500 focus:border-green-600 dark:bg-green-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-600 dark:focus:border-green-600" placeholder="Author" />
               <button type="submit" className="ml-2 p-2 text-sm text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-600 focus:ring-opacity-50">
                 Search
               </button>

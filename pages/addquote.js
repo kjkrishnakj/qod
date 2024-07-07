@@ -25,7 +25,7 @@ function Addquote() {
     const data = { author: author, descr: descr };
 
     try {
-      let res = await fetch(`http://localhost:3000/api/addquote`, {
+      let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/addquote`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ function Addquote() {
         <link rel="icon" href="/icon.ico" type="image/x-icon" />
       </Head>
 
-      <section className="text-green-500 body-font relative">
+      <section className="text-green-500 bg-gray-900 body-font relative">
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <Image src={logo} alt="" className='mx-auto mb-2' style={{ height: "4rem", width: "4rem" }} />

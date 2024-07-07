@@ -9,7 +9,7 @@ function about() {
                 <title>QODs | About</title>
                 <link rel="icon" href="/icon.ico" type="image/x-icon" />
             </Head>
-            <div className=" bg-gray-100  flex flex-col justify-center items-center" style={{height:"100vh"}}>
+            <div className=" bg-gray-900  flex flex-col justify-center items-center" style={{height:"100vh"}}>
                 <h1 className="text-2xl font-bold text-green-500 mb-4">
                     Welcome to the QOD - Quote Of the Day
                 </h1>

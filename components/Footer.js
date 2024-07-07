@@ -8,7 +8,8 @@ import Link from 'next/link'
 function Footer() {
   return (
     <div>
-      <footer className="text-gray-600 body-font">
+      <hr />
+      <footer className="text-gray-600  bg-gray-900 body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
   <Link href='/' className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
             <Image src={logo} alt="" style={{ height: "4rem", width: "4rem" }}></Image>
