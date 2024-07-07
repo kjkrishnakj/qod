@@ -30,8 +30,9 @@ export default function Home({ quotes,rQuote }) {
         <title>QODs | Home</title>
         <link rel="icon" href="/icon.ico" type="image/x-icon" />
       </Head>
+      <div className="bg-gray-900">
       <div className="container px-5 py-12 mx-auto">
-        <h1 className="text-2xl font-bold text-gray-600 mt-1 mb-2">Quote of the Day</h1>
+        <h1 className="text-2xl font-bold mt-1 text-white mb-2">Quote of the Day</h1>
         <div className="border p-4 my-4 rounded-lg bg-green-100">
           <p className="text-lg italic">{`"${rQuote.descr}"`}</p>
           <span className="block text-right mt-2">- {rQuote.author}</span>
@@ -40,13 +41,13 @@ export default function Home({ quotes,rQuote }) {
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-6 mx-auto">
-          <h1 className="text-2xl font-bold mt-1 mb-2">Featured Quotes</h1>
+          <h1 className="text-2xl font-bold text-white mt-1 mb-2">Featured Quotes</h1>
           <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
             {quotes.map((k) => (
               <div key={k._id} className="group border-spacing-2 my-3 rounded-lg border shadow-2xl overflow-hidden transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <div className="bg-green-500" style={{ height: '0.75cm', width: '100%' }}></div>
                 <div className="mt-4">
-                  <p className="mb-7 mt-3 mx-3 px-1">{`"${k.descr}"`}</p>
+                  <p className="mb-7 text-white mt-3 mx-3 px-1">{`"${k.descr}"`}</p>
                   <span className={`${k.author ? 'bg-green-500' : ''} text-white px-3 py-1 tracking-widest text-xs absolute right-0 bottom-0 rounded-bl`}>{`- ${k.author}`}</span>
                 </div>
               </div>
@@ -54,6 +55,7 @@ export default function Home({ quotes,rQuote }) {
           </div>
         </div>
       </section>
+      </div>
     </>
   );
 }
