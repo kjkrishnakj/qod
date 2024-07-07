@@ -15,7 +15,8 @@
 
 # production
 /build
-
+QOD demo video.mp4
+qod-master.zip
 # misc
 .DS_Store
 *.pem
