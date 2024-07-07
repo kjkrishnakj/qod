@@ -46,7 +46,7 @@ const Signup = () => {
         setPassword('')
         toast.success("welcome " + name + " 🙃", { autoClose: 1000 })
         setTimeout(() => {
-            router.push('/login')
+            router.push(`${process.env.NEXT_PUBLIC_HOST}/login`)
         }, 1000)
     }
 
